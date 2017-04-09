@@ -5,7 +5,7 @@ Bounce* buttons[24];
 void setup() {
   Keyboard.begin();
   for (int n=0; n<24; ++n) {
-    buttons[n] = new Bounce(n, 10);
+    buttons[n] = new Bounce(n, 25);
     pinMode(n, INPUT_PULLUP);
   }
 }
